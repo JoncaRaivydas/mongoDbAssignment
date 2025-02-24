@@ -8,7 +8,6 @@
   },
   "author": "",
   "license": "MIT",
-  "description": "",
   "dependencies": {
     "colors": "^1.4.0",
     "dotenv": "^16.4.7",
@@ -18,5 +17,14 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoncaRaivydas/mongoDbAssignment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JoncaRaivydas/mongoDbAssignment/issues"
+  },
+  "homepage": "https://github.com/JoncaRaivydas/mongoDbAssignment#readme",
+  "description": ""
 }
