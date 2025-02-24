@@ -1,0 +1,21 @@
+{
+  "name": "mongodbuzd",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backEnd/server.js",
+    "server": "nodemon backEnd/server.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
