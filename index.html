@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+     <!-- Login / Register Forms -->
+     <div id="auth-forms">
+      <h2>Login</h2>
+      <input type="email" id="email" placeholder="Enter email" required>
+      <input type="password" id="password" placeholder="Enter password" required>
+      <button onclick="loginUser()">Login</button>
+      <h2>Register</h2>
+      <input type="text" id="register-name" placeholder="Enter name" required>
+      <input type="email" id="register-email" placeholder="Enter email" required>
+      <input type="password" id="register-password" placeholder="Enter password" required>
+      <button onclick="registerUser()">Register</button>
+      <div id="error-message"></div>
+  </div>
+
+  <!-- Admin Panel (Hidden by default) -->
+  <div id="admin-panel" style="display: none;">
+      <h2>Welcome to the Admin Panel</h2>
+      <p>You are logged in as an admin.</p>
+      <button onclick="createCategory()">Show Categories</button>
+      <button onclick="viewPosts()">View All Posts</button>
+      <button onclick="logout()">Sign Out</button>
+  </div>
+  
+
+  <!-- User Panel (Hidden by default) -->
+  <div id="user-panel" style="display: none;">
+      <h2>Welcome to the User Panel</h2>
+      <p>You are logged in as a user.</p>
+      
+      <!-- User Panel Buttons -->
+      <button onclick="createPost()">Create New Post</button>
+      <button onclick="viewUserPosts()">View My Posts</button>
+      <button onclick="viewLikedPosts()">View Liked Posts</button>
+      <button onclick="logout()">Sign Out</button>
+  </div>
+
+  <!-- Post Creation Form (Hidden by default) -->
+  <div id="create-post-form" style="display: none;">
+      <h3>Create New Post</h3>
+      <input type="text" id="post-title" placeholder="Post title" required>
+      <textarea id="post-content" placeholder="Post content" required></textarea>
+      <button onclick="submitPost()">Submit Post</button>
+      <button onclick="cancelPostCreation()">Cancel</button>
+  </div>
+</body>
+</html>
